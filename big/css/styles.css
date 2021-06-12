@@ -1,0 +1,183 @@
+/* styles for my new-page website */
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family:Helvetica, arial, sans-serif;
+    background:#C7CFD9;
+/* have to use ../ to jump folders */
+    background-image:url(../images/gtr_logo2.png);
+/* bakcground image stays in place */
+    background-attachment:fixed;
+}
+
+header {
+/* Always do margin-bottom for the logo to give it some space */
+/* be consistent with values!! */
+    margin-bottom:10px;
+}
+
+/* display inline for the logo makes only the logo clickable */
+#logo {
+    display:inline;
+}
+
+nav {
+    height:50px;
+    line-height:50px;
+    background:#8C7F77;
+    margin-bottom:10px;
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+/* 5 list items so the width is 20%. if it was 4 list items then the width would be 25% */
+nav li {
+    float:left;
+    width:50%;
+    text-align:center;
+}
+
+/* The nav anchor is what is displaying the underline so in order to remove the underline I have to do text-decoration:none; */
+/* The display:block; is what will make the button go all around the corners in the nav and not just around the text */
+nav a {
+    text-decoration:none;
+    display:block;
+    color:#000;
+}
+
+.home nav li:nth-child(1) a,
+.big nav li:nth-child(2) a{
+    background:#999999;
+}
+
+/* The hover is what will make a change when hovering over the link. for instance color */
+nav a:hover {
+    background:#999999;
+}
+
+main {
+    margin-top:20px;
+    width:580px;
+    float:left;
+    margin-bottom:20px;
+}
+
+figure {
+    margin-bottom:5px;
+}
+
+figcaption {
+    background:#8C7F77;
+    color:#fff;
+    padding:8px;
+    font-size:13px;
+    font-style:italic;
+    text-align:center;
+}
+
+aside ul {
+    list-style-type:circle;
+    margin:0 0 20px 20px;
+}
+
+img.figage {
+    width:100%;
+    margin-bottom:-5px;
+}
+
+#wrapper {
+    width:940px;
+    margin:20px auto; /* 20px from the top and bottom, AND auto from the rigt and the left */
+/*  border:1px solid red; */ /* always need 3 specifications. one is size in px, next is the type of border and last is the color */
+    background:#E4EAF2;
+/* The overflow: hidden; is going to cause the second picture not to stick out of the wrapper */
+    overflow:hidden;
+/* This padding is going to give the wrapper some breathing space and make it look less cramped */
+    padding:20px;
+    border:2px solid #000;
+}
+
+aside {
+    margin-top:20px;
+    background:#E4EAF2;
+    width:340px;
+    float:right;
+}
+
+footer {
+    height:50px;
+/* Make the line-height: the same as height: to make the footer contents not touch the top */
+    line-height:50px;
+    background:#8C7F77;
+/* clear:both; will clear both left and right for the footer and it'll go to the bottom */
+    clear:both;
+}
+
+/* How to remove the bullet in the footer for the copyright */
+footer ul {
+    list-style-type:none;
+/* The margin-left: will slightly push the contents of footer right */
+    margin-left:20px;
+}
+
+/* The footer li is going to make the footer info appear horizontally */
+footer li {
+    float:left;
+/* The margin-right: will give the contents of the footer space between each list */
+    margin-right:30px;
+}
+
+a {
+/* This will change the colors of the links in the footer and in general from blue to brown */
+    color:#401A0D;
+}
+
+/* This means that this is talking about image class of right */
+/* When floating an image to the left or to the right it will have the paragraphs beside it */
+img.right {
+    float:right;
+/* When floating to the right, add margin left */
+    margin:0 0 10px 30px;
+}
+
+img.left {
+    float:left;
+/* When floating to the left, add margin right */
+    margin:0 30px 20px 0;
+}
+
+/* img.center or anything that has the class of center is going to get centered */
+.center {
+/* The two properties below are responsible for the image */
+    display:block;
+    margin:20px auto;
+/* The only way to center the paragraph is when you say text-align:center; */
+    text-align:center;
+}
+
+h1, h2, h3 {
+/* This will give more space for the bottom of the h1 and h2 */
+    margin-bottom:8px;
+}
+
+p {
+/* the margin is going to add a space between the paragraphs */ 
+    margin-bottom:20px;
+/* more space between the lines of the paragraphs */
+    line-height:1.5;
+}
+
+h3 {
+    font-style:italic;
+}
+
+
+
+
+

@@ -1,0 +1,307 @@
+/* styles for my Template for Final website */
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-size:100%;
+    font-family:Verdana, helvetica, arial, sans-serif;
+    background-image:url(../images/wood_background.jpg);
+    background-size:cover;
+}
+
+/* This is short for div#wrapper */
+/* Always use 940px width for the class */
+/* use margin to center the wrapper */
+#wrapper {
+    width:940px;
+    margin:40px auto 20px auto;
+    background:rgba(255, 228, 196, .50); 
+}
+
+header {
+    background:rgba(250, 250, 250, .0);
+    line-height:4;
+    font-size:110%; 
+    z-index:1; 
+}
+
+header img {
+    padding:20px 15px 5px 15px;
+}
+
+/* display inline for the logo makes only the logo clickable */
+#logo {
+    float:left;
+    display:inline;
+}
+
+nav {
+    height:30px;
+    line-height:30px;
+    background:#7d4e24;
+}
+
+nav ul {
+    list-style-type:none; 
+}
+
+/* 5 list items so the width is 20%. if it was 4 list items then the width would be 25% */
+nav li {
+    float:left;
+    width:20%;
+    text-align:center;
+}
+
+/* The nav anchor is what is displaying the underline so in order to remove the underline I have to do text-decoration:none; */
+/* The display:block; is what will make the button go all around the corners in the nav and not just around the text */
+nav a {
+    text-decoration:none;
+    display:block;
+    color:#f8c7a6;
+}
+
+/* The hover is what will make a change when hovering over the link. for instance color */
+nav a:hover {
+    background:#4c2c17;
+}
+
+/* This is going to make the button that is selected glow the hover color */ 
+.index nav li:nth-child(1) a,
+.services nav li:nth-child(2) a,
+.innerPage nav li:nth-child(3) a, /* css selector */
+.about nav li:nth-child(4) a,
+.contact nav li:nth-child(5) a{
+    background:#4c2c17;
+}
+
+table img{
+    height:315px;
+    width:940px;
+}
+
+main {
+    margin:10px;
+    background-color:#ae7b4e;
+    border:1px solid black;
+    float:left;
+}
+
+main h3 {
+    text-align:center;
+    background-color:#7d4e24;
+    border-radius:25px;
+    padding:5px;
+    margin:10px;
+}
+
+main h4 {
+    color:#000;
+    text-align:center;
+    font-style:italic;
+    padding:10px;
+}
+
+main p {
+    font-style:italic; 
+}
+
+main li { 
+    font-size:.90em; 
+    margin:10px;
+}
+
+main ul {
+    list-style-type:circle;
+    margin:20px;
+}
+
+/* BEGINNING for FORM in contacts.html */
+/* max width of page 940px */
+form {
+    width:580px;
+}
+
+fieldset {
+    padding:10px;
+}
+
+legend {
+    font-size:1.5em;
+    font-style:italic;
+    padding:0 4px;
+    color:#000;
+}
+
+/* display:block for the label will make the label be above the input */
+label {
+    display:block;
+    margin:5px;
+}
+
+input {
+    width:100%;
+    height:25px;
+    margin-bottom:10px;
+}
+
+input[type=text], 
+input[type=email],
+input[type=subject]{
+    width:50%;
+}
+
+/* If I have an imput with the value submit, give it this: */
+/* width auto is better than pixels and better than percentages because it gets bigger if you add more text and doesn't cut it */
+input[type=submit] {
+    width:auto;   
+}
+
+textarea {
+    width:95%;
+    height:100px;
+    margin-bottom:10px;
+    resize:none;
+}
+/* END for form in contacts.html */
+
+/* aside max 940px but need to take away size for form */
+aside {
+    width:300px;
+    margin:10px 10px 0 0;
+    float:right;
+    height:485px;
+    padding:5px;
+    border:1px solid black;
+    background-color:#ae7b4e;
+}
+
+aside h4 {
+    text-align:center;
+    color:#000;
+}
+
+aside p {
+    text-align:center; 
+}
+
+aside ul {
+    list-style-type:none;
+}
+
+aside li {
+    text-align:center;
+}
+
+aside a {
+    color:#4c2c17;
+}
+
+#description ul{
+    list-style-type:none;
+    border-radius:25px;  
+    background-color:#7d4e24;
+    padding:5px;
+    margin:10px;
+    width:130px;
+    color:#f8c7a6; 
+}
+
+/*** Embed responsively youtube START ***/
+.embed-container { 
+    position:relative; 
+    padding-bottom:56.25%; 
+    height:0; 
+    overflow:hidden; 
+    max-width:100%;
+    margin:0 15px 30px 15px;
+    border:1px solid black;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+}
+
+/*** Embed responsively youtube END ***/
+
+footer {
+    border-top:1px solid #666;
+    height:50px;
+    line-height:50px;
+    background:#4c2c17;
+    font-size:.875em; 
+    clear:both;
+}
+
+footer ul {
+    list-style-type:none;
+}
+
+/* don't forget that list items are blocj level elements, and if you would like them to be displayed horizontally, then float them! */
+/* The margin-left of 30px will give space between the content in the footer */
+footer li {
+    float:left;
+    margin-left:30px;
+    color:#f8c7a6;
+}
+
+footer a {
+    color:#f8c7a6;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+/*+++ Typography +++*/
+
+h2, h3, h4 {
+    margin-bottom:8px;
+    font-family:times, serif;
+    line-height:1.1;
+}
+
+/* 1em= 16px */
+h1 {
+    font-size:2.488em;
+    font-family:inherit;
+    font-weight:200%;
+    letter-spacing:15px; 
+    color:#000;
+}
+
+h2 {
+    font-size:2.074em;
+    color:#000;
+    line-height:1.1; 
+}
+
+h3 {
+    font-size:1.728em;
+    color:#000;
+    text-transform:uppercase; 
+    font-weight:200%;
+}
+
+h4 {
+    font-size:1.44em;
+    color:#666;
+}
+
+p {
+    margin-bottom:20px;
+    line-height:1.4;
+    padding:10px; 
+    font-size:.8em;
+}
+
+nav li {
+    font-size:.9em; 
+}

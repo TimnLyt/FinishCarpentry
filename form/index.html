@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form Homework Website</title>
+<!-- The link below will link this page with the css -->
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        
+        <header>
+        <div class="header-inner">
+        <a href="index.html">
+        <img id="logo" src="images/motorcycle_logo.png" alt="Motorcycle Logo"> 
+        </a>
+        </div>
+        <h1> Join the motorcycle club! </h1>
+        </header>
+        
+        <main>
+            <form action="formhandler.php" method="post">
+<!-- The feildset is the different sections that will be categorized. hold different categories inside different feildsets. For us all form elements will be inside one feildset -->
+        <fieldset>
+<!-- adding a legend right below the first field set  -->
+            <legend> Contact Tim </legend>
+<!-- the label is going to be the input section for the user with the word name in the begining of it  -->
+            <label> Name </label>
+            <input type="text" name="name">
+            <label> Email </label>
+            <input type="email" name="email">
+            
+<!-- The radio will add a choice of fillable circles -->
+<!-- The name always stays the same!! PAYMENT -->
+            <label> Payment </label>
+            <ul>
+                <li><input type="radio" name="payment" value="mastercard">Mastercard</li>
+                <li><input type="radio" name="payment" value="visa">Visa</li>
+                <li><input type="radio" name="payment" value="amx">AMX</li>
+                <li><input type="radio" name="payment" value="discover">Discover</li>
+                <li><input type="radio" name="payment" value="paypal">Paypal</li>
+            </ul>
+            
+<!-- This will be a checkbox section -->
+            <label> Specifics </label>
+            <ul>
+                <li><input type="checkbox" name="types[]" value="new">New</li>
+                <li><input type="checkbox" name="types[]" value="Used">Used</li>
+                <li><input type="checkbox" name="types[]" value="over">Over 10k</li>
+                <li><input type="checkbox" name="types[]" value="under">Under 10k</li>
+            </ul>
+            
+<!-- This is going to be a select tag (drop down menu) that gives the user an oppertunity to select from several options -->
+            <label> Types </label>
+            <select name="The Type:">
+                <option value="sport">Sport</option>
+                <option value="casual">Casual</option>
+                <option value="luxury">Luxury</option>
+                <option value="vintage">Vintage</option> 
+            </select>
+            
+            <label> Models </label>
+            <select name="The Model:">
+                <option value="honda">Honda</option>
+                <option value="bmw">BMW</option>
+                <option value="harley">Harley</option>
+                <option value="yamaha">Yamaha</option>
+                <option value="kawasaki">Kawasaki</option>
+            </select>
+            
+<!-- The comment section will add a box that's usually large and for comments -->            
+            <label> Comments </label>
+            <textarea name="comments">
+            </textarea>
+            
+<!-- The submit type will add a submit button -->
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+        </main>
+        
+        <aside>
+            <h3> Large selection of Motorcycles for Enthusiasts </h3>
+<!-- Figure nests the image between the text -->
+        <figure> 
+            <img id="moto" src="images/motorcycle.jpg" alt="Motorcycle">
+<!-- Below the figure is where you add the caption -->
+        <figcaption> A Motorcycle Of Your Liking! </figcaption>
+        </figure>
+        
+        <h4> It's just what we do: </h4>
+            
+        <p> We have a large selection of motorcycles that will not dassapoint! everything set up to your liking with your specifications! </p>
+        
+        <h4> Give it a try: </h4>
+        
+        <p> All you have to do is give us some information and we do the rest. Customer satisfaction guaranteed! </p>
+        </aside>    
+        
+        <footer>
+            <ul>
+                <li> Copyright 2020 &copy; </li>
+                <li> All Rights Reserved </li>
+                <li> <a href="../index.html">Terms of Use</a></li>
+                <li> <a href="../index.html">Web Design by Tim Lytvynchuk</a></li>
+                <li> <a href="https://validator.w3.org/check?uri=referer">Valid</a></li>
+            </ul>
+        </footer>    
+        
+    </div>
+</body>
+</html>    

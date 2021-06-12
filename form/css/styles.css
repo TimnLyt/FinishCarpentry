@@ -1,0 +1,208 @@
+/* styles of my form */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box; 
+}
+
+/* I WILL BE ADDING PADDING TO THE BODY FOR DEMONSTRATION PURPOSES ONLY! REMOVE THIS WHEN YOU START WORKING ON YOUR HOMEWORK ASSIGNMENT! */
+
+/* adding padding to see the form not touching the edge of the browser window (demonstration purposes) */
+/* The background is added only to see that everything in the page is working nicely */
+body {
+/*  padding:50px; */
+    background-color:floralwhite;
+    font-size:100%;
+    font-family:Verdana, helvetica, arial, sans-serif;
+}
+
+/* Website Styles */
+
+#wrapper {
+    width:940px;
+    margin:0 auto;
+}
+
+header {
+    margin-bottom:17px;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+#logo {
+    display:inline;
+}
+
+main {
+    width:580px;
+    float:left;
+    margin-bottom:20px;
+}
+
+figure {
+    margin-bottom:5px;
+}
+
+#moto {
+    display:block;
+    margin-left:11%;
+    border:1px solid grey; 
+}
+
+figcaption {
+    background:lightblue;
+    color:darkblue;
+    padding:8px;
+    font-size:13px;
+    font-style:italic;
+    text-align:center;
+    border:1px dotted grey;
+}
+
+aside {
+    width:340px;
+    margin-top:12px;
+    float:right;
+    height:748px;
+    padding:5px;
+    background-color:aliceblue;
+    border:2px solid darkgrey;
+}   
+
+footer {
+    border-top:2px dotted #666;
+    height:50px;
+    background-color:lightblue;
+    line-height:50px;
+    font-size:.875em; 
+    clear:both;
+}
+
+footer ul {
+    list-style-type:none;
+    float:right;
+}
+
+footer li {
+    float:left;
+    margin:0 30px 0 30px;
+    color:darkblue;
+}
+
+/* when the name and the label is displaying next to eachother it is displaying inline */
+/* The max with makes the form smaller and it'll shrink with the page but won't get any bigger */
+form {
+    max-width:580px;
+}
+
+fieldset {
+    padding:10px;
+}
+
+legend {
+    font-size:1.5em;
+    font-style:italic;
+    padding:0 4px;
+    color:green;
+   
+}
+
+/* display:block for the label will make the label be above the input */
+label {
+    display:block;
+    margin:5px;
+}
+
+input {
+    width:100%;
+    height:25px;
+    margin-bottom:10px;
+}
+
+input[type=text], 
+input[type=email] {
+    width:50%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    width:auto;
+    height:auto;
+    margin-right:5px; 
+}
+
+/* If I have an imput with the value submit, give it this: */
+/* width auto is better than pixels and better than percentages because it gets bigger if you add more text and doesn't cut it */
+input[type=submit] {
+    width:auto;   
+}
+
+textarea {
+    width:100%;
+    height:80px;
+    margin-bottom:10px;
+    resize:none; 
+}
+
+select {
+    margin-bottom:10px;
+}
+
+/* this says when I have a form unordered list do this: */
+form ul {
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+
+/* the list-style-type:none is what removes the bullet point */
+form li {
+    list-style-type:none; 
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+    margin-bottom:8px;
+    font-family:times, serif;
+    line-height:1.1;
+}
+
+h1 {
+    font-size:2.488em;
+    font-weight:200;
+    color:#05a;
+}
+
+h2 {
+    font-size:2.074em;
+    color:#555;
+    line-height:1.1; 
+}
+
+h3 {
+    font-size:1.728em;
+    color:#666;
+    text-transform:uppercase; 
+    font-weight:200;
+}
+
+h4 {
+    font-size:1.44em;
+    color:#666;
+}
+
+p {
+    margin-bottom:20px;
+    line-height:1.4; 
+}
+
+aside p {
+    font-size:.9em;
+    color:#666; 
+}
+
+
+
+
